@@ -22,6 +22,12 @@ export const AppDefinition: IAppDefinition = {
           url: '#/examples/chiclet'
         },
         {
+          component: require<any>('../components/Fadient/FadientPage').FadientPage,
+          key: 'Fadient',
+          name: 'Fadient',
+          url: '#/examples/fadient'
+        },
+        {
           component: require<any>('../components/FolderCover/FolderCoverPage').FolderCoverPage,
           key: 'FolderCover',
           name: 'FolderCover',

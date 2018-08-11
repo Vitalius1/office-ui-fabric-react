@@ -1,6 +1,8 @@
 import * as React from 'react';
+
 import { ExampleCard, ComponentPage, IComponentDemoPageProps, PropertiesTableSet } from '@uifabric/example-app-base';
 import { Link } from 'office-ui-fabric-react/lib/Link';
+
 import { ShimmerBasicExample } from './examples/Shimmer.Basic.Example';
 import { ShimmerCustomElementsExample } from './examples/Shimmer.CustomElements.Example';
 import { ShimmerLoadDataExample } from './examples/Shimmer.LoadData.Example';
