@@ -22,6 +22,12 @@ export const AppDefinition: IAppDefinition = {
           url: '#/examples/chiclet'
         },
         {
+          component: require<any>('../components/FadedOverflow/FadedOverflowPage').FadedOverflowPage,
+          key: 'FadedOverflow',
+          name: 'FadedOverflow',
+          url: '#/examples/fadedOverflow'
+        },
+        {
           component: require<any>('../components/FolderCover/FolderCoverPage').FolderCoverPage,
           key: 'FolderCover',
           name: 'FolderCover',
