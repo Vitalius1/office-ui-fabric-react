@@ -19,7 +19,7 @@ export const FadedOverflowStyles = (props: IFadedOverflowStyleProps): IFadedOver
       classNames.root,
       normalize,
       {
-        backgroundColor: isRTL ? palette.red : palette.blueMid
+        backgroundColor: isRTL ? palette.yellow : palette.tealLight
       },
       className
     ]

@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { FadedOverflowView as view } from './FadedOverflow.view';
 import { FadedOverflowStyles as styles } from './FadedOverflow.styles';
 import { IFadedOverflowProps, IFadedOverflowStyles } from './FadedOverflow.types';

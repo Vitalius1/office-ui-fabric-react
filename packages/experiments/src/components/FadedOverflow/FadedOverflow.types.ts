@@ -20,19 +20,14 @@ export interface IFadedOverflowProps extends IStyleableComponent<IFadedOverflowP
   className?: string;
 }
 
-/**
- * Props needed to construct styles.
- */
-export type IFadedOverflowViewProps = Pick<IFadedOverflowProps, 'className'>;
-
-export type IFadedOverflowStyleProps = IThemedProps<IFadedOverflowViewProps>;
+export type IFadedOverflowStyleProps = IThemedProps<Pick<IFadedOverflowProps, 'className'>>;
 
 /**
  * Represents the stylable areas of the control.
  */
 export interface IFadedOverflowStyles {
   /**
-   * Style for the root element when fixed.
+   * Style for the root element.
    */
   root?: IStyle;
 }
