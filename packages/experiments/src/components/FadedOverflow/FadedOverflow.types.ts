@@ -14,13 +14,15 @@ export interface IFadedOverflowProps extends IStyleableComponent<IFadedOverflowP
    */
   componentRef?: IRefObject<IFadedOverflow>;
 
+  lineHeight: number;
+
   /**
    * Additional CSS class(es) to apply to the FadedOverflow root.
    */
   className?: string;
 }
 
-export type IFadedOverflowStyleProps = IThemedProps<Pick<IFadedOverflowProps, 'className'>>;
+export type IFadedOverflowStyleProps = IThemedProps<Pick<IFadedOverflowProps, 'className' | 'lineHeight'>>;
 
 /**
  * Represents the stylable areas of the control.
@@ -30,4 +32,6 @@ export interface IFadedOverflowStyles {
    * Style for the root element.
    */
   root?: IStyle;
+  content?: IStyle;
+  trigger?: IStyle;
 }
