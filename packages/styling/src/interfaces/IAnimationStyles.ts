@@ -35,10 +35,12 @@ export interface IAnimationStyles {
   scaleDownOut98: IRawStyle;
   fadeIn100: IRawStyle;
   fadeIn200: IRawStyle;
+  fadeIn300: IRawStyle;
   fadeIn400: IRawStyle;
   fadeIn500: IRawStyle;
   fadeOut100: IRawStyle;
   fadeOut200: IRawStyle;
+  fadeOut300: IRawStyle;
   fadeOut400: IRawStyle;
   fadeOut500: IRawStyle;
   rotate90deg: IRawStyle;
@@ -46,8 +48,21 @@ export interface IAnimationStyles {
 }
 
 export interface IAnimationVariables {
+  // Timing functions
+  decelerateEaseFunction: string;
+  accelerateEaseFunction: string;
+  linearEaseFunction: string;
+  standardEaseFunction: string;
+  // Legacy timing functions
   easeFunction1: string;
   easeFunction2: string;
+  // Durations
+  duration100: string;
+  duration200: string;
+  duration300: string;
+  duration400: string;
+  duration500: string;
+  // Legacy durations
   durationValue1: string;
   durationValue2: string;
   durationValue3: string;
