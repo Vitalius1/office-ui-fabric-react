@@ -65,7 +65,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
             {
               align-items: stretch;
               background: #ffffff;
-              border-color: #a80000;
+              border-color: #a4262c;
               border: 1px solid #a19f9d;
               box-shadow: none;
               box-sizing: border-box;
@@ -90,7 +90,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
               border-color: Highlight;
             }
             &:focus, &:hover {
-              border-color: #a80000;
+              border-color: #a4262c;
             }
       >
         <input
@@ -199,7 +199,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
             {
               align-items: stretch;
               background: #ffffff;
-              border-color: #a80000;
+              border-color: #a4262c;
               border: 1px solid #a19f9d;
               box-shadow: none;
               box-sizing: border-box;
@@ -224,7 +224,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
               border-color: Highlight;
             }
             &:focus, &:hover {
-              border-color: #a80000;
+              border-color: #a4262c;
             }
       >
         <input
@@ -328,14 +328,14 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
       className=
           ms-TextField-wrapper
           {
-            border-bottom-color: #a80000;
+            border-bottom-color: #a4262c;
             border-bottom-style: solid;
             border-bottom-width: 1px;
             display: flex;
             width: 100%;
           }
           &:hover {
-            border-bottom-color: #a80000;
+            border-bottom-color: #a4262c;
           }
           @media screen and (-ms-high-contrast: active){&:hover {
             border-bottom-color: Highlight;
@@ -377,7 +377,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
             {
               align-items: stretch;
               background: #ffffff;
-              border-color: #a80000;
+              border-color: #a4262c;
               border: none;
               box-shadow: none;
               box-sizing: border-box;
@@ -404,7 +404,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
               border-color: Highlight;
             }
             &:focus, &:hover {
-              border-color: #a80000;
+              border-color: #a4262c;
             }
       >
         <input
@@ -543,7 +543,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
             {
               align-items: stretch;
               background: #ffffff;
-              border-color: #a80000;
+              border-color: #a4262c;
               border: 1px solid #a19f9d;
               box-shadow: none;
               box-sizing: border-box;
@@ -569,7 +569,7 @@ exports[`Component Examples renders TextField.AllErrorMessage.Example.tsx correc
               border-color: Highlight;
             }
             &:focus, &:hover {
-              border-color: #a80000;
+              border-color: #a4262c;
             }
       >
         <textarea

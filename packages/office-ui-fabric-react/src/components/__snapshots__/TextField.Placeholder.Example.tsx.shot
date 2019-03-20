@@ -311,7 +311,7 @@ exports[`Component Examples renders TextField.Placeholder.Example.tsx correctly 
               border-color: Highlight;
             }
             &:after {
-              color: #a80000;
+              color: #a4262c;
               content: '*';
               position: absolute;
               right: -10px;
@@ -421,7 +421,7 @@ exports[`Component Examples renders TextField.Placeholder.Example.tsx correctly 
             {
               align-items: stretch;
               background: #ffffff;
-              border-color: #a80000;
+              border-color: #a4262c;
               border: 1px solid #a19f9d;
               box-shadow: none;
               box-sizing: border-box;
@@ -446,7 +446,7 @@ exports[`Component Examples renders TextField.Placeholder.Example.tsx correctly 
               border-color: Highlight;
             }
             &:focus, &:hover {
-              border-color: #a80000;
+              border-color: #a4262c;
             }
       >
         <input

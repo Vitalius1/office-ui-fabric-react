@@ -501,14 +501,14 @@ exports[`TextField renders multiline TextField correctly with errorMessage 1`] =
     className=
         ms-TextField-wrapper
         {
-          border-bottom-color: #a80000;
+          border-bottom-color: #a4262c;
           border-bottom-style: solid;
           border-bottom-width: 1px;
           display: flex;
           width: 100%;
         }
         &:hover {
-          border-bottom-color: #a80000;
+          border-bottom-color: #a4262c;
         }
         @media screen and (-ms-high-contrast: active){&:hover {
           border-bottom-color: Highlight;
@@ -550,7 +550,7 @@ exports[`TextField renders multiline TextField correctly with errorMessage 1`] =
           {
             align-items: stretch;
             background: #ffffff;
-            border-color: #a80000;
+            border-color: #a4262c;
             border: none;
             box-shadow: none;
             box-sizing: border-box;
@@ -577,7 +577,7 @@ exports[`TextField renders multiline TextField correctly with errorMessage 1`] =
             border-color: Highlight;
           }
           &:focus, &:hover {
-            border-color: #a80000;
+            border-color: #a4262c;
           }
     >
       <div
@@ -736,14 +736,14 @@ exports[`TextField renders multiline TextField correctly with props affecting st
     className=
         ms-TextField-wrapper
         {
-          border-bottom-color: #a80000;
+          border-bottom-color: #a4262c;
           border-bottom-style: solid;
           border-bottom-width: 1px;
           display: flex;
           width: 100%;
         }
         &:hover {
-          border-bottom-color: #a80000;
+          border-bottom-color: #a4262c;
         }
         @media screen and (-ms-high-contrast: active){&:hover {
           border-bottom-color: Highlight;
@@ -785,7 +785,7 @@ exports[`TextField renders multiline TextField correctly with props affecting st
           {
             align-items: stretch;
             background: #ffffff;
-            border-color: #a80000;
+            border-color: #a4262c;
             border: none;
             box-shadow: none;
             box-sizing: border-box;
@@ -812,7 +812,7 @@ exports[`TextField renders multiline TextField correctly with props affecting st
             border-color: Highlight;
           }
           &:focus, &:hover {
-            border-color: #a80000;
+            border-color: #a4262c;
           }
     >
       <div
@@ -972,14 +972,14 @@ exports[`TextField should resepect user component and subcomponent styling 1`] =
     className=
         ms-TextField-wrapper
         {
-          border-bottom-color: #a80000;
+          border-bottom-color: #a4262c;
           border-bottom-style: solid;
           border-bottom-width: 1px;
           display: flex;
           width: 100%;
         }
         &:hover {
-          border-bottom-color: #a80000;
+          border-bottom-color: #a4262c;
         }
         @media screen and (-ms-high-contrast: active){&:hover {
           border-bottom-color: Highlight;
@@ -1022,7 +1022,7 @@ exports[`TextField should resepect user component and subcomponent styling 1`] =
           {
             align-items: stretch;
             background: #ffffff;
-            border-color: #a80000;
+            border-color: #a4262c;
             border: none;
             box-shadow: none;
             box-sizing: border-box;
@@ -1049,7 +1049,7 @@ exports[`TextField should resepect user component and subcomponent styling 1`] =
             border-color: Highlight;
           }
           &:focus, &:hover {
-            border-color: #a80000;
+            border-color: #a4262c;
           }
     >
       <div
