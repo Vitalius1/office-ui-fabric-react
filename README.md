@@ -16,7 +16,7 @@ Fabric React is a collection of robust React-based components designed to make i
 
 \+ 45 additional Microsoft sites and products
 
-## For more information...
+## For more information....
 
 Please see the [wiki](https://github.com/OfficeDev/office-ui-fabric-react/wiki).
 
