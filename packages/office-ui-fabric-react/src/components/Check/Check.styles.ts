@@ -12,7 +12,7 @@ export const CheckGlobalClassNames = {
 export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
   const { height = props.checkBoxHeight || '20px', checked, className, theme } = props;
 
-  const { palette, semanticColors } = theme;
+  const { semanticColors } = theme;
 
   const classNames = getGlobalClassNames(CheckGlobalClassNames, theme);
 
@@ -42,16 +42,13 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
       sharedCircleCheck,
       {
         fontSize: height,
-        color: palette.neutralSecondary,
-        background: semanticColors.bodyBackground,
+        color: checked ? semanticColors.inputForegroundChecked : semanticColors.smallInputBorder,
+        background: checked ? semanticColors.inputBackgroundChecked : semanticColors.inputBackground,
         selectors: {
           [HighContrastSelector]: {
             color: 'WindowText'
           }
         }
-      },
-      checked && {
-        color: palette.themePrimary
       }
     ],
 
@@ -59,13 +56,11 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
       classNames.check,
       sharedCircleCheck,
       {
-        textAlign: 'center',
         opacity: 0,
-        width: 18,
-        height: 18,
-        left: 1,
-        top: 1,
-        color: palette.neutralSecondary,
+        width: height,
+        height: height,
+        color: semanticColors.inputPlaceholderText,
+        textAlign: 'center',
         fontSize: IconFontSizes.medium,
         selectors: {
           ':hover': {
@@ -78,8 +73,7 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
       },
       checked && {
         opacity: 1,
-        color: palette.white,
-        background: palette.themePrimary,
+        color: semanticColors.inputForegroundChecked,
         fontWeight: 900,
         selectors: {
           [HighContrastSelector]: {

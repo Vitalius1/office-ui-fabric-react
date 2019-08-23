@@ -14,7 +14,7 @@ export const CheckBase: React.FunctionComponent<ICheckProps> = props => {
 
   return (
     <div className={classNames.root}>
-      <IconComponent iconName="LocationCircle" className={classNames.circle} />
+      <IconComponent iconName="RadioBtnOff" className={classNames.circle} />
       <IconComponent iconName="StatusCircleCheckmark" className={classNames.check} />
     </div>
   );
