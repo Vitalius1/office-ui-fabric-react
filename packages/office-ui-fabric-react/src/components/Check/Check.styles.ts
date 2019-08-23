@@ -1,6 +1,5 @@
 import { ICheckStyleProps, ICheckStyles } from './Check.types';
 import { HighContrastSelector, IStyle, getGlobalClassNames, IconFontSizes } from '../../Styling';
-import { getRTL } from '../../Utilities';
 
 export const CheckGlobalClassNames = {
   root: 'ms-Check',
@@ -11,120 +10,77 @@ export const CheckGlobalClassNames = {
 };
 
 export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
-  const { height = props.checkBoxHeight || '18px', checked, className, theme } = props;
+  const { height = props.checkBoxHeight || '20px', checked, className, theme } = props;
 
-  const { palette, semanticColors, fonts } = theme;
-  const isRTL = getRTL();
+  const { palette, semanticColors } = theme;
 
   const classNames = getGlobalClassNames(CheckGlobalClassNames, theme);
 
   const sharedCircleCheck: IStyle = {
-    fontSize: height,
     position: 'absolute',
-    left: 0,
-    top: 0,
     width: height,
     height: height,
+    lineHeight: '1',
     textAlign: 'center',
-    verticalAlign: 'middle'
+    borderRadius: '50%'
   };
 
   return {
     root: [
       classNames.root,
-      fonts.medium,
       {
-        // lineHeight currently needs to be a string to output without 'px'
-        lineHeight: '1',
         width: height,
         height: height,
-        verticalAlign: 'top',
         position: 'relative',
-        userSelect: 'none',
-
-        selectors: {
-          ':before': {
-            content: '""',
-            position: 'absolute',
-            top: '1px',
-            right: '1px',
-            bottom: '1px',
-            left: '1px',
-            borderRadius: '50%',
-            opacity: 1,
-            background: semanticColors.bodyBackground
-          },
-
-          [`.${classNames.checkHost}:hover &, .${classNames.checkHost}:focus &, &:hover, &:focus`]: {
-            opacity: 1
-          }
-        }
+        userSelect: 'none'
       },
-
-      checked && [
-        'is-checked',
-        {
-          selectors: {
-            ':before': {
-              background: palette.themePrimary,
-              opacity: 1,
-              selectors: {
-                [HighContrastSelector]: {
-                  background: 'Window'
-                }
-              }
-            }
-          }
-        }
-      ],
       className
     ],
 
     circle: [
       classNames.circle,
       sharedCircleCheck,
-
       {
+        fontSize: height,
         color: palette.neutralSecondary,
-
+        background: semanticColors.bodyBackground,
+        // left: 0,
         selectors: {
           [HighContrastSelector]: {
             color: 'WindowText'
           }
         }
       },
-
       checked && {
-        color: palette.white
+        color: palette.themePrimary
       }
     ],
 
     check: [
       classNames.check,
       sharedCircleCheck,
-
       {
         opacity: 0,
+        width: 18,
+        height: 18,
+        left: 1,
+        top: 1,
         color: palette.neutralSecondary,
         fontSize: IconFontSizes.medium,
-        left: isRTL ? '-0.5px' : '.5px', // for centering the check icon inside the circle.
-
         selectors: {
           ':hover': {
             opacity: 1
           },
-
           [HighContrastSelector]: {
             MsHighContrastAdjust: 'none'
           }
         }
       },
-
       checked && {
         opacity: 1,
         color: palette.white,
+        background: palette.themePrimary,
         fontWeight: 900,
-
         selectors: {
           [HighContrastSelector]: {
             border: 'none',

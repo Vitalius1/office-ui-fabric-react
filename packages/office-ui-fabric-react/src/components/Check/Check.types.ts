@@ -51,13 +51,13 @@ export type ICheckStyleProps = Required<Pick<ICheckProps, 'theme'>> &
   Pick<ICheckProps, 'className' | 'checked'> & {
     /**
      * Custom height/width for the checkbox.
-     * @defaultvalue '18px'
+     * @defaultvalue '20px'
      */
     height?: string;
 
     /**
      * Custom height/width for the checkbox.
-     * @defaultvalue '18px'
+     * @defaultvalue '20px'
      * @deprecated Use `height`
      */
     checkBoxHeight?: string;
