@@ -95,7 +95,7 @@ export const getStyles = (props: IGroupHeaderStyleProps): IGroupHeaderStyles => 
             ':hover': {
               background: semanticColors.listItemBackgroundCheckedHovered
             },
-            [`${classNames.check}`]: {
+            [`.${classNames.check}`]: {
               opacity: 1
             }
           }
