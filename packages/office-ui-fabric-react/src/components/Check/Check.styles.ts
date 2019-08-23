@@ -57,8 +57,6 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
       sharedCircleCheck,
       {
         opacity: 0,
-        width: height,
-        height: height,
         color: semanticColors.inputPlaceholderText,
         textAlign: 'center',
         fontSize: IconFontSizes.medium,
