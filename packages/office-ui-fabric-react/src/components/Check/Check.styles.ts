@@ -21,7 +21,6 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
     width: height,
     height: height,
     lineHeight: '1',
-    textAlign: 'center',
     borderRadius: '50%'
   };
 
@@ -32,7 +31,8 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
         width: height,
         height: height,
         position: 'relative',
-        userSelect: 'none'
+        userSelect: 'none',
+        textAlign: 'start' // weird bug with font icons if not set
       },
       className
     ],
@@ -44,7 +44,6 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
         fontSize: height,
         color: palette.neutralSecondary,
         background: semanticColors.bodyBackground,
-        // left: 0,
         selectors: {
           [HighContrastSelector]: {
             color: 'WindowText'
@@ -60,6 +59,7 @@ export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
       classNames.check,
       sharedCircleCheck,
       {
+        textAlign: 'center',
         opacity: 0,
         width: 18,
         height: 18,

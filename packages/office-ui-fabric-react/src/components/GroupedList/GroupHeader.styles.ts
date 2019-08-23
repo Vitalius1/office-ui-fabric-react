@@ -132,7 +132,6 @@ export const getStyles = (props: IGroupHeaderStyleProps): IGroupHeaderStyles => 
         opacity: 0,
         width: CHECK_CELL_WIDTH,
         height: finalRowHeight,
-        textAlign: 'start', // workaround for Check bug.
         selectors: {
           [`.${IsFocusVisibleClassName} &:focus`]: {
             opacity: 1
